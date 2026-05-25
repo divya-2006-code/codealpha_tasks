@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<h1>✨ My Image Gallery</h1>
+<button id="theme-toggle">🌙 Toggle Theme</button>
+
+<!-- FILTER BUTTONS -->
+<div class="filters">
+    <button onclick="filterImages('all', this)" class="active">All</button>
+    <button onclick="filterImages('nature', this)">Nature</button>
+    <button onclick="filterImages('city', this)">City</button>
+    <button onclick="filterImages('bird', this)">Bird</button>
+    <button onclick="filterImages('food', this)">Food</button>
+    <button onclick="filterImages('baby', this)">Baby</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+    <div class="gallery-item" data-category="city">
+        <img src="images/img1.jpg" class="gallery-img">
+        <div class="overlay">City</div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+        <img src="images/img2.jpg" class="gallery-img">
+        <div class="overlay">Nature</div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+        <img src="images/img3.jpg" class="gallery-img">
+        <div class="overlay">Nature</div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+        <img src="images/img4.jpg" class="gallery-img">
+        <div class="overlay">City</div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+        <img src="images/img5.jpg" class="gallery-img">
+        <div class="overlay">Nature</div>
+    </div>
+
+    <div class="gallery-item" data-category="nature">
+        <img src="images/img6.jpg" class="gallery-img">
+        <div class="overlay">Nature</div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+        <img src="images/img7.jpg" class="gallery-img">
+        <div class="overlay">City</div>
+    </div>
+
+    <div class="gallery-item" data-category="city">
+        <img src="images/img8.jpg" class="gallery-img">
+        <div class="overlay">City</div>
+    </div>
+
+    <div class="gallery-item" data-category="bird">
+        <img src="images/img9.jpg" class="gallery-img">
+        <div class="overlay">Bird</div>
+    </div>
+
+    <div class="gallery-item" data-category="bird">
+        <img src="images/img10.jpg" class="gallery-img">
+        <div class="overlay">Bird</div>
+    </div>
+
+    <div class="gallery-item" data-category="bird">
+        <img src="images/img11.jpg" class="gallery-img">
+        <div class="overlay">Bird</div>
+    </div>
+
+    <div class="gallery-item" data-category="bird">
+        <img src="images/img12.jpg" class="gallery-img">
+        <div class="overlay">Bird</div>
+    </div>
+
+    <div class="gallery-item" data-category="food">
+        <img src="images/img13.jpg" class="gallery-img">
+        <div class="overlay">Food</div>
+    </div>
+
+    <div class="gallery-item" data-category="food">
+        <img src="images/img14.jpg" class="gallery-img">
+        <div class="overlay">Food</div>
+    </div>
+
+    <div class="gallery-item" data-category="baby">
+        <img src="images/img15.jpg" class="gallery-img">
+        <div class="overlay">Baby</div>
+    </div>
+
+    <div class="gallery-item" data-category="baby">
+        <img src="images/img16.jpg" class="gallery-img">
+        <div class="overlay">Baby</div>
+    </div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+<button id="play">▶</button>
+    <span class="close">&times;</span>
+    <img id="lightbox-img">
+    <button id="prev">❮</button>
+    <button id="next">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
