@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Calculator Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>🧮 Smart Calculator </h1>
+    <p>Fast • Clean • Smart Memory Enabled</p>
+
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </div>
+
+  <!-- Calculator -->
+  <div class="calculator">
+
+    <input type="text" id="display" disabled placeholder="0">
+
+    <div class="buttons">
+
+      <button data-value="C" class="op">C</button>
+      <button data-value="DEL" class="op">⌫</button>
+      <button data-value="/" class="op">÷</button>
+      <button data-value="*" class="op">×</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="-" class="op">−</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="+" class="op">+</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value="=" class="equal">=</button>
+
+      <button data-value="0" class="zero">0</button>
+      <button data-value=".">.</button>
+
+    </div>
+  </div>
+
+  <!-- History -->
+  <div class="history">
+    <h3>History</h3>
+    <ul id="historyList"></ul>
+    <button id="clearHistory">Clear History</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
