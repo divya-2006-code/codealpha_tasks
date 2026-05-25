@@ -1,6 +1,9 @@
 # 📸 Image Gallery Project
 
 ## 🔗 Live Demo
+https://divya-2006-code.github.io/Image-Gallery---Task-1/
+
+
 
 -----
 
